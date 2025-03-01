@@ -2,20 +2,94 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevBoard</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevBoard</title>
 
-    <!-- daisyui cdn -->
+  <!-- disyui 5 cdn -->
 
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+
+  <!-- css -->
+
+  <link rel="stylesheet" href="./styles/style.css">
+
+  <!-- google font -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+
+
+
+
+
 
 </head>
 
-<body>
+<body class=" bg-yellow-100">
 
-    <div>hey</div>
+  <main class="max-w-screen-xl mx-auto">
+
+    <!-- navbar -->
+
+    <nav class="py-6">
+      <div class="flex justify-between navbar bg-base-100 shadow-sm rounded-lg p-5 ">
+
+
+        <div class="flex justify-center items-center">
+          <!-- <a class="btn btn-ghost text-xl">Dev<span>Board</span></a> -->
+
+          <img src="./assets/logo.png" alt="">
+          <h3 class="text-4xl">Dev<span class="font-bold">Board</span></h3>
+
+        </div>
+        <div class="flex gap-4">
+          <div class="bg-[#F4F7FF] flex justify-center items-center border-none rounded-full px-5">
+            <img src="./assets/checkbox.png" alt="">
+            <h3 class="heading-text">23</h3>
+
+          </div>
+
+          <button class="bg-[#F4F7FF] border-none rounded-full p-3">
+            <img src="./assets/theme-btn.png" alt="">
+          </button>
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- main grid  -->
+
+    <div class="grid grid-cols-4 gap-6 ">
+
+
+
+      <!-- task section -->
+
+      <div class="col-span-3 bg-slate-600 rounded-lg p-5">
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, inventore! Expedita commodi odio consectetur minus, a cum quibusdam perferendis, repudiandae officia dolorum molestiae modi itaque delectus quaerat impedit ullam magni!</p>
+
+      </div>
+
+      <!-- acitivity log -->
+
+      <div class="col-span-1 bg-red-600 rounded-lg p-5 ">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi veritatis blanditiis illo iusto obcaecati culpa fugiat rerum doloremque! Fugit vel doloremque minus corporis tempora eveniet soluta maxime. Placeat, rerum nobis?</p>
+
+      </div>
+
+
+    </div>
+
+  </main>
 
 </body>
 
