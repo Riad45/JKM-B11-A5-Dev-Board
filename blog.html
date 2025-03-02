@@ -46,32 +46,74 @@
         </div>
       </nav>
 
-
       <!-- blog section  -->
 
-      <section>
-
+      <section class="pb-10">
         <h3 class="text-center heading-text mb-5">Blogs</h3>
-
 
         <!-- Blogssss -->
 
         <div class="collapse bg-base-100 border border-base-300">
-            <input type="radio" name="my-accordion-1" checked="checked" />
-            <div class="collapse-title font-semibold">How do I create an account?</div>
-            <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
+          <input type="radio" name="my-accordion-1" checked="checked" />
+          <div class="collapse-title font-bold heading-text">
+            What are the different ways to select an element in the DOM?
           </div>
-          <div class="collapse bg-base-100 border border-base-300">
-            <input type="radio" name="my-accordion-1" />
-            <div class="collapse-title font-semibold">I forgot my password. What should I do?</div>
-            <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the instructions sent to your email.</div>
+          <div class="collapse-content text-sm">
+            We can select an element in the DOM using methods like
+            getElementById() for selecting by ID, getElementsByClassName() for
+            selecting by class name, getElementsByTagName() for selecting by tag
+            name, querySelector() for selecting the first matching element using
+            CSS selectors, and querySelectorAll() for selecting all matching
+            elements.
           </div>
-          <div class="collapse bg-base-100 border border-base-300">
-            <input type="radio" name="my-accordion-1" />
-            <div class="collapse-title font-semibold">How do I update my profile information?</div>
-            <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+        </div>
+        <div class="collapse bg-base-100 border border-base-300">
+          <input type="radio" name="my-accordion-1" checked="checked" />
+          <div class="collapse-title font-bold heading-text">
+            Difference between innerHTML, innerText, and textContent?
           </div>
-
+          <div class="collapse-content text-sm">
+            innerHTML gets or sets the HTML content inside an element. innerText
+            gets or sets only the visible text of an element, considering CSS
+            styling. textContent gets or sets all the text content, regardless
+            of CSS styling, including hidden elements.
+          </div>
+        </div>
+        <div class="collapse bg-base-100 border border-base-300">
+          <input type="radio" name="my-accordion-1" checked="checked" />
+          <div class="collapse-title font-bold heading-text">
+            What is event delegation?
+          </div>
+          <div class="collapse-content text-sm">
+            Event delegation is a technique where we attach a single event
+            listener to a parent element, and the event listener handles events
+            for all its child elements, even if they are dynamically added or
+            removed.
+          </div>
+        </div>
+        <div class="collapse bg-base-100 border border-base-300">
+          <input type="radio" name="my-accordion-1" checked="checked" />
+          <div class="collapse-title font-bold heading-text">
+            What is event bubbling?
+          </div>
+          <div class="collapse-content text-sm">
+            Event bubbling is the process where an event starts from the target
+            element and bubbles up to its ancestors in the DOM hierarchy,
+            triggering any relevant event listeners on each ancestor along the
+            way.
+          </div>
+        </div>
+        <div class="collapse bg-base-100 border border-base-300">
+          <input type="radio" name="my-accordion-1" checked="checked" />
+          <div class="collapse-title font-bold heading-text">
+            How to create, add, and remove elements in JavaScript?
+          </div>
+          <div class="collapse-content text-sm">
+            To create an element, we use document.createElement(). To add an
+            element, we can use appendChild() or insertBefore(). To remove an
+            element, we use the remove() method.
+          </div>
+        </div>
       </section>
     </main>
 
@@ -81,7 +123,7 @@
         .addEventListener("click", function (event) {
           event.preventDefault();
 
-          window.location.href="./index.html";
+          window.location.href = "./index.html";
         });
     </script>
 
