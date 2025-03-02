@@ -20,7 +20,6 @@ for (const btn of taskBtn) {
         
 
         let completedTask = innerTextToNumById("completed-task");
-        console.log(completedTask);    
         completedTask += 1;
         setTextbyId("completed-task", completedTask);
 
@@ -35,9 +34,32 @@ for (const btn of taskBtn) {
             } , 400);   
         }
 
-        let time= new Date().toLocaleTimeString();
-        
+
+        // activity log 
+
+        let taskCompletedTime= new Date().toLocaleTimeString();
+
+        const card = event.target.closest(".task-box");
+        const cardTitle = card.querySelector(".card-title").innerText;
+
+        console.log(cardTitle);
+        console.log(taskCompletedTime);
+
+
+       let historyMsg = document.createElement("p");
+       historyMsg.innerText= `You have completed the task ${cardTitle} at ${taskCompletedTime}`;
+       historyMsg.classList.add("history-msg");
+       document.getElementById("history").appendChild(historyMsg);
+
 
 
     })
 }
+
+
+// Clear activity log history
+
+document.getElementById("clear-history-btn")
+.addEventListener("click",function(){
+    document.getElementById("history").innerHTML="";
+})
