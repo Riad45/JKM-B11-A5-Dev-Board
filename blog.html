@@ -6,7 +6,7 @@
     <title>Blogs</title>
 
     <!-- fav icon -->
-     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
     <!-- disyui 5 cdn -->
 
     <link
@@ -30,28 +30,63 @@
     />
   </head>
   <body class="bg-[#F4F7FF]">
+    <main class="max-w-screen-xl mx-auto">
+      <nav class="py-5">
+        <div
+          class="flex justify-between navbar bg-base-100 shadow-sm rounded-xl p-5"
+        >
+          <div class="flex justify-center items-center">
+            <img src="./assets/logo.png" alt="" />
+            <h3 class="text-4xl">Dev<span class="font-bold">Board</span></h3>
+          </div>
 
-        <main class="max-w-screen-xl mx-auto">
-            <nav class="py-5">
-                <div
-                  class="flex justify-between navbar bg-base-100 shadow-sm rounded-xl p-5"
-                >
-                  <div class="flex justify-center items-center">
-                    
-        
-                    <img src="./assets/logo.png" alt="" />
-                    <h3 class="text-4xl">Dev<span class="font-bold">Board</span></h3>
-                  </div>
-
-                  <button id="back-to-desk" class="btn btn-primary">Back to Desk</button>
-                  
-                </div>
-              </nav>
-        </main>
+          <button id="back-to-desk" class="btn btn-primary">
+            Back to Desk
+          </button>
+        </div>
+      </nav>
 
 
-        <script src="scripts/script.js"></script>
-        <script src="./scripts/utilites.js"></script>
-        <script src="./scripts/toggle.js"></script>
+      <!-- blog section  -->
+
+      <section>
+
+        <h3 class="text-center heading-text mb-5">Blogs</h3>
+
+
+        <!-- Blogssss -->
+
+        <div class="collapse bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-1" checked="checked" />
+            <div class="collapse-title font-semibold">How do I create an account?</div>
+            <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
+          </div>
+          <div class="collapse bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title font-semibold">I forgot my password. What should I do?</div>
+            <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the instructions sent to your email.</div>
+          </div>
+          <div class="collapse bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title font-semibold">How do I update my profile information?</div>
+            <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+          </div>
+
+      </section>
+    </main>
+
+    <script>
+      document
+        .getElementById("back-to-desk")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+
+          window.location.href="./index.html";
+        });
+    </script>
+
+    <script src="scripts/script.js"></script>
+    <script src="./scripts/utilites.js"></script>
+    <script src="./scripts/toggle.js"></script>
   </body>
 </html>
