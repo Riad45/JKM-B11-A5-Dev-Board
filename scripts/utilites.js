@@ -15,9 +15,10 @@ function setTextbyId(id , text){
      document.getElementById(id).innerText= text;
 }
 
-// console.log(innerTextToNumById("completed-task"));
-// console.log(getTextById("completed-task"));
 
-// function activityHistoryUpdate(){
-//     document.getElementsByClassName("")
-// }
+function getRandomLightColor() {
+    const r = Math.floor(Math.random() * 76) + 180; 
+    const g = Math.floor(Math.random() * 76) + 180; 
+    const b = Math.floor(Math.random() * 76) + 180; 
+    return `rgb(${r}, ${g}, ${b})`;
+  }
